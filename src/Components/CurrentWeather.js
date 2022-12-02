@@ -7,7 +7,7 @@ import weatherType from "../Functions/WeatherType";
 import isDaytime from "../Functions/IsDaytime";
 import axios from 'axios'
 
-const CurrentWeather = ({ loc }) => {
+const CurrentWeather = ({ loc, setSelectedLocation }) => {
 
     const [weatherData, setWeatherData] = useState(null)
 
@@ -34,12 +34,13 @@ const CurrentWeather = ({ loc }) => {
 
     return (
         <>
-        {weatherData && <div className="currentweather">
+        {weatherData && <div className="currentweather" onClick={() => setSelectedLocation(loc.name)} >
             <div className='currentweather_title'>{loc.name}</div>
             <div className="currentweather_main">
                 <div className="currentweather_main_temp">{weatherData.temperature}°C</div>
                 <div className="currentweather_main_weather">
                     <div>{weatherData.type.type.name}</div>
+                    {/* <div>Thunderstorm with slight hail</div> */}
                     <img src={require(`../Images/WeatherIcons/${weatherData.type.type.img}`)} alt={weatherData.type.type.img}></img>  
                 </div>
             </div>

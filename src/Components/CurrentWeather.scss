@@ -3,6 +3,7 @@
     border-radius: 1em;
     margin-bottom: 1em;
     padding: 1em;
+    width: 15em;
 
     &:hover {
         cursor: pointer;
@@ -29,6 +30,7 @@
 
             & > img {
                 width: 2.5em;
+                margin-top: 0.2em;
             }
         }
 

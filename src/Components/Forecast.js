@@ -9,12 +9,14 @@ import CurrentWeather from './CurrentWeather';
 const Forecast = () => {
 
     const [locations, setLocations] = useState(weatherLocations1)
+    const [selectedLocation, setSelectedLocation] = useState(null)
 
     return (
         <div className='forecast'>
-            {locations.map((loc, i) => {
-                return <CurrentWeather key={i} loc={loc} />
+            {selectedLocation === null && locations.map((loc, i) => {
+                return <CurrentWeather key={i} loc={loc} setSelectedLocation={setSelectedLocation} />
             })}
+            {selectedLocation && <div className='window' onClick={() => {setSelectedLocation(null)}}>{selectedLocation}</div>}
             {/* <button onClick={() => console.log(locations)}>Locations</button> */}
         </div>
     )
