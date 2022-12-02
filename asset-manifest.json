@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Weather-App/static/css/main.aa02a6a4.css",
+    "main.js": "/Weather-App/static/js/main.7ae2405f.js",
+    "static/media/clouds-g5fa903c3e_1280.jpg": "/Weather-App/static/media/clouds-g5fa903c3e_1280.d843e2003d05102efe57.jpg",
+    "static/media/heavy-rain.png": "/Weather-App/static/media/heavy-rain.95892180f12c72aa8e39.png",
+    "static/media/hot.png": "/Weather-App/static/media/hot.2de553afebf49adca5ae.png",
+    "static/media/storm.png": "/Weather-App/static/media/storm.abea6aa30bc66915560e.png",
+    "static/media/hail.png": "/Weather-App/static/media/hail.d2ec8037e88274343b0c.png",
+    "static/media/cold.png": "/Weather-App/static/media/cold.a0e27e9111b28c0a3ddc.png",
+    "static/media/rain.png": "/Weather-App/static/media/rain.fea62e3beeb0049f5768.png",
+    "static/media/snowing.png": "/Weather-App/static/media/snowing.b08dafc21cf5c0102ce0.png",
+    "static/media/partly-cloudy.png": "/Weather-App/static/media/partly-cloudy.46d14d94f86b2333db65.png",
+    "static/media/snow.png": "/Weather-App/static/media/snow.10e99b501636f123df8f.png",
+    "static/media/moon.png": "/Weather-App/static/media/moon.04d1a5ab2060d1328f83.png",
+    "static/media/cloudy-day.png": "/Weather-App/static/media/cloudy-day.09ebc518ec014910b5a6.png",
+    "static/media/moon-and-cloud.png": "/Weather-App/static/media/moon-and-cloud.0787238c77f113cd223d.png",
+    "static/media/snowflake.png": "/Weather-App/static/media/snowflake.042ccc225df97dccb5f9.png",
+    "static/media/drizzle.png": "/Weather-App/static/media/drizzle.7a67e88c9f48e56eb3ca.png",
+    "static/media/sun.png": "/Weather-App/static/media/sun.3c891107df9c87318dde.png",
+    "static/media/fog.png": "/Weather-App/static/media/fog.000fa7622fe3d97327ae.png",
+    "static/media/night.png": "/Weather-App/static/media/night.8c6b0a4b06e2ce6defc3.png",
+    "static/media/light-rain.png": "/Weather-App/static/media/light-rain.031b8b1eb51bc7b4d26c.png",
+    "static/media/wind.png": "/Weather-App/static/media/wind.e6a790430bdcead4d886.png",
+    "static/media/warning.png": "/Weather-App/static/media/warning.b1d3c5484a8cbb6991dd.png",
+    "static/media/overcast.png": "/Weather-App/static/media/overcast.2f7df7cb1010225d7cbd.png",
+    "index.html": "/Weather-App/index.html",
+    "main.aa02a6a4.css.map": "/Weather-App/static/css/main.aa02a6a4.css.map",
+    "main.7ae2405f.js.map": "/Weather-App/static/js/main.7ae2405f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa02a6a4.css",
+    "static/js/main.7ae2405f.js"
+  ]
+}
