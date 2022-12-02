@@ -34,7 +34,7 @@ const CurrentWeather = ({ loc, setSelectedLocation }) => {
 
     return (
         <>
-        {weatherData && <div className="currentweather" onClick={() => setSelectedLocation(loc.name)} >
+        {weatherData && <div className="currentweather" onClick={() => setSelectedLocation(loc)} >
             <div className='currentweather_title'>{loc.name}</div>
             <div className="currentweather_main">
                 <div className="currentweather_main_temp">{weatherData.temperature}°C</div>
