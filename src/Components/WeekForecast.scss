@@ -1,7 +1,7 @@
 .weekforecast {
 
     &_title {
-        background-color: white;
+        background-color: beige;
         border-radius: 1em;
         margin-bottom: 1em;
         padding: 1rem;
@@ -13,8 +13,8 @@
         align-items: center;
 
         &_back {
-            border: 1px solid lightgray;
-            color: lightgray;
+            border: 1px solid gray;
+            color: gray;
             font-size: 1rem;
             font-weight: 400;
             padding: 0 0.5rem;
@@ -23,7 +23,7 @@
 
             &:hover {
                 cursor: pointer;
-                background-color: lightgray;
+                background-color: gray;
                 color: white;
             }
         }    
