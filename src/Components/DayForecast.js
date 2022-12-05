@@ -5,7 +5,7 @@ import getTimeString from '../Functions/GetTimeString'
 import windDirection from "../Functions/WindDirection";
 import weatherType from "../Functions/WeatherType";
 
-const DayForecast = ({ data }) => {
+const DayForecast = ({ data, setSelectedDay }) => {
 
     const day = getDateString(data.time)
     const sunrise = getTimeString(data.sunrise)
@@ -14,7 +14,7 @@ const DayForecast = ({ data }) => {
     const type = weatherType(data.weatherCode, true)
 
     return (
-        <div className='dayforecast'>
+        <div className='dayforecast' onClick={() => setSelectedDay(data.time)}>
             <div className='dayforecast_title'>{day}</div>
             <div className='dayforecast_main'>
                 <div className='dayforecast_main_temp'>

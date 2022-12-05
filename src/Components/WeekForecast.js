@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import DayForecast from './DayForecast'
+import HourlyForecast from './HourlyForecast'
 
 const WeekForecast = ({ selectedLocation, setSelectedLocation }) => {
 
     const [weekForecast, setWeekForecast] = useState(null)
+    const [selectedDay, setSelectedDay] = useState(null)
 
     const loadWeekForecastData = async () => {
         const response = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${selectedLocation.lat}&longitude=${selectedLocation.lon}&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,weathercode,windspeed_10m_max,winddirection_10m_dominant&timezone=auto`);
@@ -27,12 +29,12 @@ const WeekForecast = ({ selectedLocation, setSelectedLocation }) => {
     }, []);
 
     return (
-        <div className='weekforecast' onClick={() => {setSelectedLocation(null)}}>
+        <div className='weekforecast'>
             <div className='weekforecast_title'>
                 <div>{selectedLocation.name}</div>
-                <div className='weekforecast_title_back'>Back</div>
+                <div className='weekforecast_title_back' onClick={() => {setSelectedLocation(null)}}>Back</div>
             </div>
-            {weekForecast && <div className="weekforecast_content">
+            {(weekForecast && selectedDay === null) && <div className="weekforecast_content">
                 {forecastLength.map((day) => {
                     return <DayForecast key={day} data={{
                         time: weekForecast.daily.time[day],
@@ -43,9 +45,10 @@ const WeekForecast = ({ selectedLocation, setSelectedLocation }) => {
                         weatherCode: weekForecast.daily.weathercode[day],
                         windDirection: weekForecast.daily.winddirection_10m_dominant[day],
                         windSpeedMax: weekForecast.daily.windspeed_10m_max[day] 
-                    }}/>   
+                    }} setSelectedDay={setSelectedDay} />   
                 })}
             </div>}
+            {selectedDay && <HourlyForecast selectedDay={selectedDay} setSelectedDay={setSelectedDay} />}
         </div>
     )
 }

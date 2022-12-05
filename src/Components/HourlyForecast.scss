@@ -1,0 +1,30 @@
+.hourforecast {
+    &_title {
+        background-color: beige;
+        border-radius: 1em;
+        margin-bottom: 1em;
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 1.5em;
+        min-width: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_back {
+            border: 1px solid gray;
+            color: gray;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0 0.5rem;
+            height: 1.3rem;
+            border-radius: 0.65rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: gray;
+                color: white;
+            }
+        }    
+    }
+}

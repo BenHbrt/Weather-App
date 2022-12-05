@@ -11,6 +11,7 @@ const Forecast = () => {
 
     const [locations, setLocations] = useState(weatherLocations1)
     const [selectedLocation, setSelectedLocation] = useState(null)
+    const [selectedDate, setSelectedDate] = useState (null)
 
     return (
         <div className='forecast'>
