@@ -38,8 +38,8 @@ const WeekForecast = ({ selectedLocation, setSelectedLocation }) => {
                         time: weekForecast.daily.time[day],
                         sunrise: weekForecast.daily.sunrise[day],
                         sunset: weekForecast.daily.sunset[day],
-                        tempMax: weekForecast.daily.temperature_2m_max[day],
-                        tempMin: weekForecast.daily.temperature_2m_min[day],
+                        tempMax: Math.round(weekForecast.daily.temperature_2m_max[day]),
+                        tempMin: Math.round(weekForecast.daily.temperature_2m_min[day]),
                         weatherCode: weekForecast.daily.weathercode[day],
                         windDirection: weekForecast.daily.winddirection_10m_dominant[day],
                         windSpeedMax: weekForecast.daily.windspeed_10m_max[day] 

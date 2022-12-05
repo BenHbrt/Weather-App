@@ -9,4 +9,59 @@
         font-weight: 700;
         font-size: 1.5em;
     }
+
+    &_main {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem 0;
+
+        &_temp {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 1.3rem;
+            align-items: flex-start;
+            align-self: center;
+            margin: 0 1rem;
+
+            & > div > img {
+                height: 1rem;
+
+                &:nth-child(2) {
+                    margin-left: -0.4rem;
+                    margin-right: 0.1rem;
+                }
+            }
+        }
+
+        &_weather {
+
+            & > img {
+                width: 2.5rem;
+                margin-top: 0.2rem;
+            }
+        }
+
+    }
+
+    &_wind {
+
+        & > img {
+            height: 1rem;
+            margin-right: 0.1rem;
+        }
+    }
+
+    &_sun {
+
+        & > img {
+            height: 1rem;
+            margin-right: 0.1rem;
+        }
+
+        & > span {
+            margin: 0 0.5rem;
+        }
+    }
 }

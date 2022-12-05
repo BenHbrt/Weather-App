@@ -44,9 +44,11 @@ const CurrentWeather = ({ loc, setSelectedLocation }) => {
                     <img src={require(`../Images/WeatherIcons/${weatherData.type.type.img}`)} alt={weatherData.type.type.img}></img>  
                 </div>
             </div>
-            <div><strong>Windspeed: </strong>{weatherData.windspeed}km/h</div>
-            <div><strong>Wind direction: </strong>{weatherData.windDirectionText}</div>
-            <div>Last updated: {weatherData.time.slice(-5)}</div>
+            <div className='currentweather_wind'>
+                <img src={require("../Images/WeatherIcons/air.png")} alt="wind" />
+                {weatherData.windspeed}km/h, {weatherData.windDirectionText}
+            </div>
+            <div className="currentweather_update">Updated at {weatherData.time.slice(-5)} local time.</div>
         </div>}
         </>
     )
