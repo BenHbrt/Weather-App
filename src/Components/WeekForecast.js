@@ -48,7 +48,7 @@ const WeekForecast = ({ selectedLocation, setSelectedLocation }) => {
                     }} setSelectedDay={setSelectedDay} />   
                 })}
             </div>}
-            {selectedDay && <HourlyForecast selectedDay={selectedDay} setSelectedDay={setSelectedDay} />}
+            {selectedDay && <HourlyForecast selectedDay={selectedDay} setSelectedDay={setSelectedDay} selectedLocation={selectedLocation} />}
         </div>
     )
 }
